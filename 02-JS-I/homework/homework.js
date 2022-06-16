@@ -81,7 +81,7 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num <= 90) {
+  if (num < 90) {
     return true;
   } else {
     return false;
@@ -171,7 +171,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero === 0) {
     return false;
-  } else if (numero % 2 === 0) {
+  } else if (numero > 0) {
     return `Es positivo`;
   } else {
     return `Es negativo`;
