@@ -21,7 +21,7 @@ function mayoriaDeEdad(edad) {
   if (edad >= 18) {
     return `Allowed`;
   } else {
-    return `Not alllowed`;
+    return `Not allowed`;
   }
 }
 
@@ -31,7 +31,7 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if (status !== 1 || status !== 2) {
+  if (status !== 1 && status !== 2) {
     return `Offline`;
   } else if (status === 1) {
     return `Online`;
@@ -47,11 +47,11 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma !== `aleman` || idioma !== `mandarin` || idioma !== `ingles`) {
+  if (idioma !== `aleman` && idioma !== `mandarin` && idioma !== `ingles`) {
     return `Hola!`;
-  } else if (idioma == `aleman`) {
+  } else if (idioma === `aleman`) {
     return `Guten Tag!`;
-  } else if (idioma == `mandarin`) {
+  } else if (idioma === `mandarin`) {
     return ` Ni Hao!`;
   } else {
     return `Hello!`;
@@ -68,20 +68,15 @@ function colors(color) {
   //Usar el statement Switch.
   switch (color) {
     case `blue`:
-      console.log(`This is blue`);
-      break;
+      return `This is blue`;
     case `red`:
-      console.log(`This is red`);
-      break;
+      return `This is red`;
     case `green`:
-      console.log(`This is green`);
-      break;
+      return `This is green`;
     case `orange`:
-      console.log(`This is orange`);
-      break;
+      return `This is orange`;
     default:
-      console.log(`Color not found`);
-      break;
+      return `Color not found`;
   }
 }
 
@@ -148,7 +143,7 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1 === 0 || num2 === 0 || num3 === 0) {
     return `Error`;
   } else if (num1 > num2 && num1 > num3 && num1 > 0 && num2 > 0 && num3 > 0) {
-    return `Numero 1 es mayor y positivo`;
+    return `Número 1 es mayor y positivo`;
   } else if (num1 < 0 || num2 < 0 || num3 < 0) {
     return `Hay negativos`;
   } else if (num3 > num1 && num3 > num2) {
@@ -180,7 +175,7 @@ function esVerdadero(valor) {
   if (valor === true) {
     return `Soy verdadero`;
   } else {
-    return ` Soy falso`;
+    return `Soy falso`;
   }
 }
 
