@@ -52,7 +52,7 @@ function saludo(idioma) {
   } else if (idioma === `aleman`) {
     return `Guten Tag!`;
   } else if (idioma === `mandarin`) {
-    return ` Ni Hao!`;
+    return `Ni Hao!`;
   } else {
     return `Hello!`;
   }
