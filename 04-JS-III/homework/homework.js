@@ -65,8 +65,8 @@ function arrayContiene(array, elemento) {
     if (array[i] === elemento) {
       return true;
     }
-    return false;
   }
+  return false;
 }
 
 function agregarNumeros(numeros) {
@@ -139,7 +139,7 @@ function diaDeLaSemana(numeroDeDia) {
     if (numeroDeDia === 1 || numeroDeDia === 7) {
       return `Es fin de semana`;
     } else {
-      return `Es dia laboral`;
+      return `Es dia Laboral`;
     }
   }
 }
@@ -159,8 +159,8 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí
-  for (let i = 0; i < arreglo.length; i++) {
-    if (arreglo[i] !== arreglo[i] + 1) {
+  for (let i = 0; i < arreglo.length - 1; i++) {
+    if (arreglo[i] !== arreglo[i + 1]) {
       return false;
     }
   }
@@ -183,7 +183,7 @@ function mesesDelAño(array) {
     }
   }
   if (newarr.length < 3) {
-    return `No se encuentran los meses pedidos`;
+    return `No se encontraron los meses pedidos`;
   } else {
     return newarr;
   }
@@ -236,9 +236,9 @@ function continueStatement(numero) {
   let nuevoarray = [];
   let acum = numero;
   for (var i = 0; i < 10; i++) {
-    acum = acum + 2;
     if (i === 5) continue;
     else {
+      acum = acum + 2;
       nuevoarray.push(acum);
     }
   }
