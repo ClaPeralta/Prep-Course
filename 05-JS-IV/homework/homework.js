@@ -38,10 +38,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  let objetoMisterioso = {
-    numeroMisterioso: 1,
-  };
-  let resultado = objetoMisterioso[numeroMisterioso] * 5;
+  let resultado = objetoMisterioso["numeroMisterioso"] * 5;
 
   return resultado;
 }
@@ -61,9 +58,9 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
   let objeto = {
-    nombre: ``,
-    email: ``,
-    password: ``,
+    nombre: `nombre`,
+    email: `email`,
+    password: `password`,
   };
   return objeto;
 }
