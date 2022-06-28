@@ -7,9 +7,9 @@ function crearGato(nombre, edad) {
   // Devuelve el objeto
   // Tu código:
   let objeto = {
-    nombre: `nombre`,
-    edad: `edad`,
-    meow: function () {
+    nombre: nombre,
+    edad: edad,
+    meow: function meow() {
       return `Meow!`;
     },
   };
@@ -58,9 +58,9 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
   let objeto = {
-    nombre: `nombre`,
-    email: `email`,
-    password: `password`,
+    nombre: nombre,
+    email: email,
+    password: password,
   };
   return objeto;
 }
@@ -100,7 +100,7 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario[password] = nuevaPassword;
+  usuario["password"] = nuevaPassword;
 
   return usuario;
 }
@@ -110,7 +110,7 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
-  usuario[amigos].push(nuevoAmigo);
+  usuario["amigos"].push(nuevoAmigo);
 
   return usuario;
 }
@@ -136,7 +136,7 @@ function sumarLikesDeUsuario(usuario) {
   // Tu código:
   var meGusta = 0;
   for (let i = 0; i < usuario.posts.length; i++) {
-    meGusta = meGusta + usuario[post[i]].likes;
+    meGusta = meGusta + usuario.posts[i].likes;
   }
   return meGusta;
 }
