@@ -24,7 +24,7 @@ function numberOfCharacters(string) {
   //Escribe tu código aquí
   var objeto = {};
   for (let i = 0; i < string.length; i++) {
-    if (objeto.hasOwnproperty(string[i])) {
+    if (objeto.hasOwnProperty(string[i])) {
       objeto[string[i]] = objeto[string[i]] + 1;
     } else {
       objeto[string[i]] = 1;
@@ -99,13 +99,11 @@ function sortArray(arr) {
   var cambio = true;
   while (cambio) {
     cambio = false;
-    for (var i = 0; arr.length - 1; i++) {
-      if (arr[i].length > arr[i + 1].length) {
-        var aux = arr[i];
-        arr[i] = arr[i + 1];
-        arr[i + 1] = aux;
-        cambio = true;
-      }
+    for (var i = 0; i < arr.length > arr[i + 1].length; i++) {
+      var aux = arr[i];
+      arr[i] = arr[i + 1];
+      arr[i + 1] = aux;
+      cambio = true;
     }
   }
   return arr;
@@ -125,7 +123,7 @@ function buscoInterseccion(arreglo1, arreglo2) {
       }
     }
   }
-  return coincidencias;
+  return interseccion;
 }
 
 // No modificar nada debajo de esta línea
