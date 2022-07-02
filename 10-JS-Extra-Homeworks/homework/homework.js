@@ -99,14 +99,16 @@ function sortArray(arr) {
   var cambio = true;
   while (cambio) {
     cambio = false;
-    for (var i = 0; i < arr.length > arr[i + 1].length; i++) {
-      var aux = arr[i];
-      arr[i] = arr[i + 1];
-      arr[i + 1] = aux;
-      cambio = true;
+    for (var i = 0; i < arr.length > -1; i++) {
+      if (arr[i].length > arr[i + 1].length) {
+        var aux = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = aux;
+        cambio = true;
+      }
     }
   }
-  return arr;
+  return;
 }
 
 function buscoInterseccion(arreglo1, arreglo2) {
